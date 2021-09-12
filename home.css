@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color:transparent;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    margin-top: 16px;
+    font-family: 'Sen', sans-serif;
+    font-size: 35px;
+    color: #e50914;
+    letter-spacing: 0.05em;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-list-item{
+    display: flex;
+    margin-right: 30px;
+}
+
+.menu-list-item:hover{
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    opacity: 0.8;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+
+.right-menu-container{
+    flex: 5;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/cover.jpg");
+    background-size: cover;
+    /* position: relative; */
+    
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-container{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    max-width:750px;
+    position: absolute;
+    /* top: 15%; */
+    left: 25%;
+    margin:0 auto;
+    background-color:transparent;
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+    /* box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%); */
+    z-index: 1;
+}
+
+.content-title{
+    text-align: center;
+    padding: 30px;
+    font-size: 90px;
+    color: #e50914;
+    letter-spacing: 0.2rem;
+}
+
+.content-info{
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.3;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.content-subscribe-form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.email-container{
+    position: relative;
+}
+
+.invalid-feedback{
+    position: absolute;
+    opacity: 0;
+}
+
+.invalid-feedback.active{
+    position: absolute;
+    color: #ffa00a;
+    text-align: left;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.email-input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    width: 500px;
+    height: 50px;
+    margin-right: 1px;
+    background-color: white;
+    border-radius: 8px;
+    color: #151515;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+
+.place-label{
+    position: absolute;
+    bottom: 5.30%;
+    left: 12px;
+    color: #8c8c8c;
+    font-size: 17px;
+    font-weight: normal;
+    transform: translateY(-86%);
+    text-shadow: none;
+    transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease;
+}
+
+.place-label.active{
+    transform: translateY(-260%);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.email-input:focus{
+    outline: 1px solid blue;
+}
+
+.subscribe-btn{
+    width: 190px;
+    padding: 20px 12px;
+    /* padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px; */
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    letter-spacing: 0.1rem;
+    border-radius: 8px;
+    margin: 0px;
+}
+
+.content-button{
+    margin-top: 30px;
+    align-self: center;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #151515;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    word-spacing: 0.2rem;
+}
+
+.content-button:hover{
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    color: #e50914;
+    opacity: 0.8;
+}
+
+.subscribe-btn:hover{
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    opacity: 0.8;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-button{
+    margin-top: 6px;
+    border: none;
+    outline:none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+}
