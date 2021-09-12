@@ -6,7 +6,6 @@ emailInput.addEventListener("focusout",downLabel)
 
 function raiseLabel(){
     var emailLabel = document.querySelector(".place-label");
-    console.log(emailLabel);
     emailLabel.classList.add("active");
 }
 
