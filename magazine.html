@@ -9,12 +9,40 @@
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="magazine.css">
-    <title>Document</title>
+    <title>Magazine</title>
 </head>
-<body>
+<body>  
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><a href="home.html" class="link"><h1 class="logo">Magzter</h1></a></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Magazines</li>
+                    <li class="menu-list-item">Stories</li>
+                    <li class="menu-list-item">Newspapers</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="./img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="magazine-img-container">
-            <img src="/img/cote-paris.jpg" alt="" class="magazine-img">
+            <img src="/img/conde-nast.jpg" alt="" class="magazine-img">
             <div class="icon-container">
                 <i class="far fa-star icon"></i>
                 <i class="fas fa-book-open icon"></i>
@@ -35,11 +63,62 @@
                 </div>
                 <div class="magazine-desc">
                     <span class="desc-title">Description</span>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque laborum ex enim, est modi quasi nulla doloremque ullam deserunt corrupti hic saepe ipsa nesciunt tempore repellat cum maxime voluptas.
-                    Officiis similique sint, cupiditate non temporibus delectus omnis praesentium sed saepe at porro aut iure hic unde enim pariatur eum tempora velit nobis qui doloremque sequi magnam laboriosam repellendus. Iure!
-                    Quae voluptates animi perferendis voluptate voluptatibus ratione et saepe qui, fugit, sint excepturi quis tempora pariatur cum sapiente ab autem. Praesentium porro eos id quod rem, qui exercitationem vel cumque.
-                    Quis velit ratione praesentium? Odit sunt officiis accusamus in ea quasi voluptatum, provident fugiat cupiditate ex expedita corrupti reprehenderit voluptates, sequi asperiores architecto optio et. Quo provident est harum maiores.</p>
+                    <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repudiandae autem corporis modi sunt rem animi, mollitia necessitatibus minus, optio asperiores sed vel quibusdam quisquam harum debitis aspernatur! Quo, accusamus.
+                    Delectus aut sequi eveniet ipsam reprehenderit aliquid nam, iusto amet harum saepe debitis cum libero consequuntur, pariatur laudantium iste nostrum, aliquam expedita animi. Consequuntur ipsam repudiandae officia laudantium porro provident.</p>
                 </div>
+            </div>
+            <div class="pricing-container">              
+                <table class=price-table>
+                    <thead>
+                        <tr>
+                            <th>Benefits</th>
+                            <th>Duration</th>
+                            <th>Buy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="benefits-list">
+                                    <li> September 17, 2021</li>
+                                    <li>Digital Access</li>
+                                </ul>
+                            </td>
+                            <td>This Issue</td>
+                            <td><h5 class="price">₹ 7</h5>
+                                <input type="button"  class="cart-button" value="ADD TO CART">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <ul class="benefits-list">
+                                    <li>180 issues starting from September 17, 2021</li>
+                                    <li>Digital Access</li>
+                                    <li>Cancel Anytime</li>
+                                </ul>
+                            </td>
+                            <td>6 Months</td>
+                            <td><h5 class="price">₹ 1299</h5>
+                                <input type="button" class="cart-button" value="ADD TO CART">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <ul class="benefits-list">
+                                    <li> 360 issues starting from September 17, 2021</li>
+                                    <li>Digital Access</li>
+                                    <li>Cancel Anytime</li>
+                                </ul>
+                            </td>
+                            <td>1 Year</td>
+                            <td><h5 class="price">₹ 1999</h5>
+                                <input type="button" class="cart-button" value="ADD TO CART">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
