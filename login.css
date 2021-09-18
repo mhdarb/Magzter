@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: calc(100vh - 50px);
     margin:0;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -12,6 +12,7 @@
 
 .login-container{
     align-self: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     margin: 0;
@@ -51,7 +52,7 @@
 
 .form-control input{
     padding: 15px 15px;
-    padding-top: 20px;
+    padding-top: 22px;
     margin: 17px 10px;
     border: none;
     outline:none;
@@ -85,7 +86,7 @@
 }
 
 .place-label.active{
-    transform: translateY(-270%);
+    transform: translateY(-260%);
     font-size: 11px;
 }
 

@@ -7,9 +7,12 @@
 }
 
 .navbar{
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: inherit;
     height: 50px;
     background-color: black;
+    /* border: 1px solid #fe0914; */
 }
 
 .navbar-container{
@@ -19,6 +22,7 @@
     height: 100%;
     color: white;
     font-family: 'Sen', sans-serif;
+    width: 100%;
 }
 
 .logo-container{
@@ -116,13 +120,16 @@
     display: flex;
     height: calc(100vh - 50px);
     border-top: none;
+    margin: 0;
+    padding:0;
+    max-width:max-content;
 }
 
 .magazine-img-container{
     position: relative;
     flex: 5;
     display: flex;
-    /* background-color:lightgray; */
+    background-color:lightgray;
     align-items: center;
     justify-content: center;
     background-color: #f3f3f3;
@@ -207,7 +214,7 @@
 }
 
 .magazine-date{
-    font-size: 28px;
+    font-size: 25px;
     color: #fe0914;
     /* color: green; */
     /* color: #be9656; */
@@ -228,7 +235,7 @@
     color:#444;
     font-family: sans-serif;
     justify-content: space-between;
-    border-bottom: solid 1px #a7a4a4;
+    border-bottom: solid 1px green;
     padding-bottom: 5px;
     margin: 30px;
     margin-top: 8px;
@@ -333,5 +340,72 @@
 
 .cart-button:hover{
     opacity: 0.9;
+}
+
+.magazine-review{
+    margin: 5px 40px;
+}
+
+.review-icon{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.review-comment{
+    width: 100%;
+    margin-top: 6px;
+}
+
+
+body {
+    background: #eee
+}
+
+.date {
+    font-size: 11px
+}
+
+.comment-text {
+    font-size: 12px
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: blue
+}
+
+.cursor {
+    cursor: pointer
+}
+
+.textarea {
+    resize: none
+}
+
+.comments-container{
+    padding: 12px 15px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.comment{
+    margin:8px 0;
+    border-bottom: 1px solid #a7a4a4;
+}
+
+.fa-heart:hover{
+    color: red;
+    font-size: 22px;
 }
 
