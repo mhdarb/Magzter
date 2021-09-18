@@ -371,7 +371,15 @@
 .review-comment{
     width: 100%;
     margin-top: 6px;
+    border-radius: 5px;
 }
+
+.review-comment:focus{
+    outline: 1px solid #ffa00a;
+    border: none;
+}
+
+
 .fa-heart:hover{
     color: red;
 }
