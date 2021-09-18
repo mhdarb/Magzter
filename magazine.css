@@ -35,6 +35,7 @@
     color: #fe0914;
     cursor: pointer;
     letter-spacing: 0.03em;
+    margin-bottom: 0rem;
 }
 
 .menu-container{
@@ -45,12 +46,14 @@
     display: flex;
     list-style: none;
     align-items: center;
+    margin-bottom: 0rem;
+    padding: none;
 }
 
 .menu-list-item{
     display: flex;
     margin-right: 30px;
-    padding-bottom: 3px;
+    align-self: center;
 }
 
 .menu-list-item:hover{
@@ -427,14 +430,20 @@ body {
 }
 
 .comments-container{
-    padding: 12px 15px;
     max-height: 250px;
     overflow-y: scroll;
 }
 
 .comment{
     margin:8px 0;
-    border-bottom: 1px solid #a7a4a4;
+    padding: 10px;
+    border-radius:6px;
+    background-color: #fff;
+}
+
+.link:hover{
+    text-decoration: none;
+    border: none;
 }
 
 
