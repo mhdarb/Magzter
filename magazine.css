@@ -235,7 +235,7 @@
     color:#444;
     font-family: sans-serif;
     justify-content: space-between;
-    border-bottom: solid 1px green;
+    border-bottom: solid 1px #444;
     padding-bottom: 5px;
     margin: 30px;
     margin-top: 8px;
@@ -346,15 +346,40 @@
     margin: 5px 40px;
 }
 
+.review-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-family: sans-serif;
+}
+
 .review-icon{
     margin-right: 20px;
     font-size: 20px;
+}
+
+.review-icon:hover{
+    font-size: 22px;
+}
+
+.review-icon-title{
+    font-size: 12px;
+    margin-left: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .review-comment{
     width: 100%;
     margin-top: 6px;
 }
+.fa-heart:hover{
+    color: red;
+}
+
+.fa-comment:hover{
+    color:blue;
+}
+
 
 
 body {
@@ -404,8 +429,6 @@ body {
     border-bottom: 1px solid #a7a4a4;
 }
 
-.fa-heart:hover{
-    color: red;
-    font-size: 22px;
-}
+
+
 
