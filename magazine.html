@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="magazine.css">
+    <script defer src="magazine.js"></script>
     <title>Magazine</title>
 </head>
 <body>  
@@ -65,7 +66,7 @@
                 <div class="magazine-desc">
                     <span class="desc-title">Description</span>
                     <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repudiandae autem corporis modi sunt rem animi, mollitia necessitatibus minus, optio asperiores sed vel quibusdam quisquam harum debitis aspernatur! Quo, accusamus.
-                    Delectus aut sequi eveniet ipsam reprehenderit aliquid nam, iusto amet harum saepe debitis cum libero consequuntur, pariatur laudantium iste nostrum, aliquam expedita animi. Consequuntur ipsam repudiandae officia laudantium porro provident.</p>
+                    Delectus aut sequi eveniet ipsam reprehenderit aliquid nam.</p>
                 </div>
             </div>
             <div class="pricing-container">              
@@ -123,11 +124,14 @@
             </div>
             <div class="magazine-review">
                 <div class="review-icons">
-                    <i class="fas fa-heart review-icon"><span class="review-icon-title">Like</span></i>
-                    <i class="far fa-comment review-icon"><span class="review-icon-title">Comment</span></i>
-                    <i class="far fa-share-square review-icon"><span class="review-icon-title">Share</span></i>
+                    <i class="fas fa-heart review-icon"><span class="review-icon-title">Like<small id="no-of-likes">10</small></span></i>
+                    <i class="far fa-comment review-icon" id="add-comment-icon"><span class="review-icon-title">Comment<small id="no-of-likes"></small></span></i>
+                    <i class="far fa-share-square review-icon"><span class="review-icon-title">Share<small id="no-of-likes"> </small></span></i>
+                    <span id="view-comments">8 comments</span>
                 </div>
-                <textarea class="review-comment" name="" id="" cols="30" rows="3" placeholder="Write your Review..."></textarea>
+                <div id="comment-textbox">
+                    <!-- <textarea class="review-comment" name="" id="" cols="30" rows="3" placeholder="Write your Review..."></textarea> -->
+                </div>
                 <div class="comments-container">
                     <div class="comment">
                         <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/img/profile.jpg" width="40">
@@ -136,14 +140,9 @@
                         <div class="mt-2">
                             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/img/profile.jpg" width="40">
-                            <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
-                        </div>
-                        <div class="mt-2">
-                            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
                         </div>
                     </div>
 
@@ -154,14 +153,9 @@
                         <div class="mt-2">
                             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/img/profile.jpg" width="40">
-                            <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
-                        </div>
-                        <div class="mt-2">
-                            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
                         </div>
                     </div>
 
@@ -172,6 +166,10 @@
                         <div class="mt-2">
                             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
+                        </div>
                     </div>
 
                     <div class="comment">
@@ -180,6 +178,36 @@
                         </div>
                         <div class="mt-2">
                             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/img/profile.jpg" width="40">
+                            <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                        </div>
+                        <div class="mt-2">
+                            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/img/profile.jpg" width="40">
+                            <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                        </div>
+                        <div class="mt-2">
+                            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="comment-icons-container">
+                            <i class="far fa-edit comment-icon"></i>
+                            <i class="fas fa-trash comment-icon"></i>
                         </div>
                     </div>
                 </div>
