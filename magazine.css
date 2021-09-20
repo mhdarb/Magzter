@@ -388,7 +388,8 @@
 }
 
 #view-comments{
-    margin-left: 418px;
+    position: absolute;
+    right: 80px;
     font-size: 15px;
     padding-bottom: 9px;
     cursor: pointer;
